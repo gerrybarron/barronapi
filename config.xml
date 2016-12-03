@@ -47,7 +47,7 @@
 	<preference name="android-build-tool" value="gradle" />
 
     <!-- Plugins -->
-    <uses-permission android:name="android.permission.INTERNET" />
+    
     <!-- Core plugins -->
 
 
