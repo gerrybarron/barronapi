@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+  <table style="text-align:center;">
+    <tr>
+      <th>ID</th>
+      <th>Track</th>
+      <th>Artist</th>
+      <th>Albums</th>
+      <th>Date Added</th>
+    </tr>
+    <tbody id="dataTable">
+    
+    
+    
+    </tbody>
+  
+  
+  
+  
+  </table>
+
+
+
+
+
+  <script>
+  $.getJSON('http://iligtas.ph/201310805/', function(jsonData) {
+  //$.getJSON('index2.php', function(jsonData) {
+      //console.log(jsonData);
+      $('#dataTable').empty();
+      $.each(jsonData, function(idx, obj) {
+        $('#dataTable').append('<tr><td>'+obj.ID+'</td><td>'+obj.Tracks+'</td><td>'+obj.Artists+'</td><td>'+obj.Albums+'</td><td>'+obj.AddedDates+'</td></tr>');
+      }); 
+    });
+  </script>
+</body>
+</html>

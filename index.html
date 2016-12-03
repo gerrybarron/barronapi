@@ -2,42 +2,24 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css" media="screen,projection" />
+  <link rel="stylesheet" type="text/css" href="css/materialize.css" media="screen,projection" />
+  <link rel="stylesheet" type="text/css" href="css/mystyle.css" media="screen,projection" />
 </head>
 <body>
-
-  <table style="text-align:center;">
-    <tr>
-      <th>ID</th>
-      <th>Track</th>
-      <th>Artist</th>
-      <th>Albums</th>
-      <th>Date Added</th>
-    </tr>
-    <tbody id="dataTable">
-    
-    
-    
-    </tbody>
+<br>
+<h1 class="center">BARRON</h1>
+<h1 class="center">SONG META</h1>
+<div class="container">
   
+    <a href="show.html" class="waves-effect waves-light btn block" type="submit">SHOW</a>
   
-  
-  
-  </table>
-
-
-
-
-
-  <script>
-  $.getJSON('http://iligtas.ph/201310805/', function(jsonData) {
-  //$.getJSON('index2.php', function(jsonData) {
-      //console.log(jsonData);
-      $('#dataTable').empty();
-      $.each(jsonData, function(idx, obj) {
-        $('#dataTable').append('<tr><td>'+obj.ID+'</td><td>'+obj.Tracks+'</td><td>'+obj.Artists+'</td><td>'+obj.Albums+'</td><td>'+obj.AddedDates+'</td></tr>');
-      }); 
-    });
-  </script>
+</div>
+  <script type="text/javascript" src="js/materialize.js"></script>
+  <script type="text/javascript" src="js/init.js"></script>
 </body>
 </html>
